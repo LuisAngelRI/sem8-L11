@@ -72,3 +72,6 @@ GET {{server}}/cursos/2/carrera/1
 
 ###
 GET {{server}}/carreras/1/cursos
+
+###
+GET {{server}}/carreras/1/cursos
