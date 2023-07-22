@@ -1,0 +1,58 @@
+@server = https://luisangelri-glowing-journey-ggwww4ww647hwx6p-8080.preview.app.github.dev
+###
+
+GET {{server}}
+###
+
+
+GET {{server}}/cursos
+###
+
+GET {{server}}/cursos/4
+
+###
+
+GET {{server}}/cursos?size=2
+
+###
+
+GET {{server}}/cursos?size=2&page=1
+
+###
+
+GET {{server}}/cursos?sort=nombre,desc
+
+###
+
+DELETE {{server}}/cursos/52
+
+###
+
+GET {{server}}/cursos?sort=creditos,desc
+
+
+###
+
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre":"Compiladores 2", "creditos":5}
+
+###
+
+PATCH {{server}}/cursos/53
+Content-Type: application/json
+
+{"creditos":4}
+
+###
+
+
+GET {{server}}/profile/cursos
+
+###
+
+GET {{server}}/cursos/search/findByNombre?nombre=Estructura+de+datos
+
+
+
